@@ -1,0 +1,2 @@
+用JS 写出一个对象 obj，使得 obj.obj.obj.obj.obj === obj。
+也就是说不管出现多少次.obj ，都得到 obj 。
