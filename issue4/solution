@@ -1,0 +1,4 @@
+function fn(){
+  return fn
+}
+fn.fn = fn
