@@ -1,0 +1,29 @@
+Q:
+
+
+写出一个函数fn ,使得fn满足以下条件:
+1. fn() === fn
+2. fn.fn === fn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A:
+
+function fn(){
+  return fn
+}
+fn.fn = fn
