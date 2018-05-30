@@ -1,9 +1,0 @@
-function execTime(t){
-    var oldTime = Date.now();
-    while(Date.now()< oldTime +t){
-
-    }
-}
-console.log(1);  //1
-execTime(3000);// 运行 3秒钟
-console.log(2) ;//  3秒后输出 2
