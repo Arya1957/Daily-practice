@@ -1,0 +1,35 @@
+Q:
+
+写出一个函数fn， 使得fn 满足以下条件：
+1、 fn打印出'a'
+2、fn()()打印出'b'
+3、fn()()()打印出'c'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A:
+function fn(){
+  const timer1 = setTimeout(()=>console.log('a'))
+  return ()=>{
+    window.clearTimeout(timer1)
+    const timer2 = setTimeout(()=>console.log('b'))
+    return ()=>{
+      window.clearTimeout(timer2)
+      console.log('c')
+ }
+  }
+}
